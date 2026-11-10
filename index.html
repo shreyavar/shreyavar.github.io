@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: Your name and a short description for search engines. -->
+  <title>Shreya Vardhan</title>
+  <meta name="description" content="Personal academic webpage of Shreya Vardhan.">
+  <style>
+    /* Change --accent to change the link color throughout the page. */
+    :root { --accent: #78434b; --text: #292929; --muted: #666; --line: #e5e1df; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 64px 28px 40px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    h1, h2 { font-weight: normal; line-height: 1.25; }
+    h1 { font-size: 38px; margin: 0 0 8px; }
+    h2 { font-size: 25px; margin: 0 0 20px; }
+    p { margin: 0 0 16px; }
+    .affiliation, nav, .paper-meta, footer {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 25px 0 0; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 25px; }
+    section { margin-top: 38px; scroll-margin-top: 24px; }
+    .portrait { float: right; width: 170px; max-width: 40%; height: auto; margin: 0 0 20px 30px; border-radius: 3px; }
+    #about::after { content: ""; display: block; clear: both; }
+    .publications { padding-left: 24px; }
+    .publications li { padding-left: 5px; margin-bottom: 24px; }
+    .paper-title { font-weight: bold; }
+    .paper-authors { margin: 3px 0; }
+    footer { margin-top: 45px; border-top: 1px solid var(--line); padding-top: 20px; }
+    .skip-link { position: absolute; left: -9999px; }
+    .skip-link:focus { position: fixed; left: 16px; top: 16px; background: white; padding: 8px; }
+    @media (max-width: 540px) {
+      .container { padding: 32px 22px; }
+      h1 { font-size: 32px; }
+      .portrait { float: none; display: block; width: 150px; max-width: 100%; margin: 0 0 24px; }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    GETTING STARTED
+    1. Replace the text in square brackets with your own details.
+    2. Delete sections you do not need. Duplicate publication <li> blocks as needed.
+    3. Optional links and photo markup are commented out below. Remove the
+       surrounding comment markers after adding the corresponding files or URLs.
+    4. Upload this file to your GitHub Pages repository as index.html.
+    No extra stylesheet, JavaScript, or build tools are required.
+  -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container">
+    <header>
+      <h1>Shreya Vardhan</h1>
+      <p class="affiliation">[Your position] · [Your institution]</p>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <!-- LATER: Create research.html, then add a link here, for example:
+        <a href="research.html">More about my research</a>
+        -->
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <!-- OPTIONAL PHOTO: Upload photo.jpg beside index.html, then uncomment:
+        <img class="portrait" src="photo.jpg" alt="Shreya Vardhan">
+        -->
+        <p>[Introduce yourself: your current position, institution, and broad research interests.]</p>
+        <p>[Optional: Add a short paragraph about your previous positions, education, or collaborators.]</p>
+        <!-- OPTIONAL LINKS: Upload cv.pdf or replace the profile URL, then uncomment:
+        <p><a href="cv.pdf">CV</a> · <a href="https://scholar.google.com/">Google Scholar</a></p>
+        -->
+      </section>
+
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research</h2>
+        <p>[Describe the main questions you work on and what interests you about them. One short paragraph is enough to start.]</p>
+        <!-- OPTIONAL: Add more paragraphs using <p>Your text here.</p>. -->
+      </section>
+
+      <section id="publications" aria-labelledby="publications-title">
+        <!-- Change this heading to "Selected publications" if preferred. -->
+        <h2 id="publications-title">Publications</h2>
+        <ol class="publications">
+          <!-- Copy this entire <li> ... </li> block to add another publication. -->
+          <li>
+            <div class="paper-title">[Paper title]</div>
+            <div class="paper-authors">[Authors in publication order]</div>
+            <div class="paper-meta">[Journal or preprint, year]</div>
+            <!-- Replace the example URL with the paper's URL, then uncomment:
+            <a href="https://arxiv.org/abs/REPLACE_WITH_ID">arXiv</a>
+            -->
+          </li>
+          <li>
+            <div class="paper-title">[Paper title]</div>
+            <div class="paper-authors">[Authors in publication order]</div>
+            <div class="paper-meta">[Journal or preprint, year]</div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>[Your email address]<br>[Department and institution]</p>
+        <!-- For a clickable email address, replace the address and uncomment:
+        <p><a href="mailto:you@example.edu">you@example.edu</a></p>
+        -->
+      </section>
+    </main>
+    <footer>Shreya Vardhan</footer>
+  </div>
+</body>
+</html>
