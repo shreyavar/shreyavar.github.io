@@ -26,7 +26,7 @@
     h1 { font-size: 38px; margin: 0 0 8px; }
     h2 { font-size: 25px; margin: 0 0 20px; }
     p { margin: 0 0 16px; }
-    .affiliation, .paper-meta, footer {
+    .paper-meta {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       color: var(--muted);
@@ -39,7 +39,6 @@
     .publications li { padding-left: 5px; margin-bottom: 24px; }
     .paper-title { font-weight: bold; }
     .paper-authors { margin: 3px 0; }
-    footer { margin-top: 45px; border-top: 1px solid var(--line); padding-top: 20px; }
     .skip-link { position: absolute; left: -9999px; }
     .skip-link:focus { position: fixed; left: 16px; top: 16px; background: white; padding: 8px; }
     @media (max-width: 540px) {
@@ -62,12 +61,10 @@
   <div class="container">
     <header>
       <h1>Shreya Vardhan</h1>
-      <p class="affiliation">Postdoctoral Scholar · Caltech</p>
     </header>
 
     <main id="main">
-      <section id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
+      <section id="about" aria-label="Biography">
         <!-- PHOTO: Upload shreya_photo.jpg beside index.html. The filename is case-sensitive: .jpg and .JPG are different on GitHub Pages. If stored in a subfolder, include that folder in src below. -->
         <img class="portrait" src="shreya_photo.jpg" alt="Shreya Vardhan">
         <p>I am a theoretical physicist working at the intersection of quantum information, quantum gravity, and quantum many-body physics.</p>
@@ -77,7 +74,7 @@
 
       <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
-        <p>shreyavar08@gmail.com<br>Institute for Quantum Information and Matter, Caltech</p>
+        <p>shreyavar08@gmail.com</p>
       </section>
 
       <section id="publications" aria-labelledby="publications-title">
@@ -197,7 +194,6 @@
       </section>
 
     </main>
-    <footer>Shreya Vardhan</footer>
   </div>
 </body>
 </html>
