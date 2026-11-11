@@ -26,24 +26,14 @@
     h1 { font-size: 38px; margin: 0 0 8px; }
     h2 { font-size: 25px; margin: 0 0 20px; }
     p { margin: 0 0 16px; }
-    .affiliation, nav, .paper-meta, footer {
+    .affiliation, .paper-meta, footer {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       color: var(--muted);
     }
-    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 25px 0 0; }
     header { border-bottom: 1px solid var(--line); padding-bottom: 25px; }
     section { margin-top: 38px; scroll-margin-top: 24px; }
     .portrait { float: right; width: 180px; max-width: 40%; height: auto; margin: 0 0 20px 30px; border-radius: 3px; }
-    .photo-placeholder {
-      aspect-ratio: 4 / 5;
-      display: grid;
-      place-items: center;
-      border: 1px dashed #c9c0bd;
-      background: #f8f6f5;
-      color: var(--muted);
-      font: 14px Arial, Helvetica, sans-serif;
-    }
     #about::after { content: ""; display: block; clear: both; }
     .publications { padding-left: 24px; }
     .publications li { padding-left: 5px; margin-bottom: 24px; }
@@ -55,7 +45,7 @@
     @media (max-width: 540px) {
       .container { padding: 32px 22px; }
       h1 { font-size: 32px; }
-      .portrait { float: none; width: 150px; max-width: 100%; margin: 0 0 24px; }
+      .portrait { float: none; display: block; width: 150px; max-width: 100%; margin: 0 0 24px; }
     }
   </style>
 </head>
@@ -64,8 +54,7 @@
     GETTING STARTED
     1. Replace the text in square brackets with your own details.
     2. Delete sections you do not need. Duplicate publication <li> blocks as needed.
-    3. Optional links and photo markup are commented out below. Remove the
-       surrounding comment markers after adding the corresponding files or URLs.
+    3. Keep Shreya_photo.jpg and Vardhan_cv_site.pdf beside index.html.
     4. Upload this file to your GitHub Pages repository as index.html.
     No extra stylesheet, JavaScript, or build tools are required.
   -->
@@ -74,41 +63,16 @@
     <header>
       <h1>Shreya Vardhan</h1>
       <p class="affiliation">Postdoctoral Scholar · Caltech</p>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-        <!-- LATER: Create research.html, then add a link here, for example:
-        <a href="research.html">More about my research</a>
-        -->
-      </nav>
     </header>
 
     <main id="main">
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">About</h2>
-        <!-- ADD YOUR PHOTO:
-        1. Upload photo.jpg to the same folder as index.html.
-        2. Replace the photo-placeholder div below with this image tag:
-        <img class="portrait" src="photo.jpg" alt="Shreya Vardhan">
-        If your photo has a different filename, change src to match it exactly.
-        -->
-        <div class="portrait photo-placeholder" aria-label="Space for a portrait photo">Your photo here</div>
+        <!-- Keep Shreya_photo.jpg in the same folder as index.html. -->
+        <img class="portrait" src="Shreya_photo.jpg" alt="Shreya Vardhan">
         <p>I am a theoretical physicist working at the intersection of quantum information, quantum gravity, and quantum many-body physics.</p>
         <p>I am currently a postdoctoral scholar at the Institute for Quantum Information and Matter at Caltech. I was a postdoc at the Stanford Institute for Theoretical Physics from 2022 to 2025. I received my PhD at MIT in 2022.</p>
-        <!-- LINKS: Replace the paragraph below with the following links once ready.
-             Upload your CV as cv.pdf beside index.html, or replace cv.pdf with its URL.
-             Replace YOUR_GOOGLE_SCHOLAR_URL with your complete profile URL.
-        <p><a href="YOUR_GOOGLE_SCHOLAR_URL">Google Scholar</a> · <a href="cv.pdf">CV</a></p>
-        -->
-        <p class="paper-meta">Google Scholar and CV links coming soon.</p>
-      </section>
-
-      <section id="research" aria-labelledby="research-title">
-        <h2 id="research-title">Research</h2>
-        <p>[Describe the main questions you work on and what interests you about them. One short paragraph is enough to start.]</p>
-        <!-- OPTIONAL: Add more paragraphs using <p>Your text here.</p>. -->
+        <p><a href="Vardhan_cv_site.pdf">CV</a> · <a href="https://scholar.google.com/citations?user=rTUVOR0AAAAJ&amp;hl=en">Google Scholar</a></p>
       </section>
 
       <section id="publications" aria-labelledby="publications-title">
@@ -229,10 +193,7 @@
 
       <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
-        <p>[Your email address]<br>Institute for Quantum Information and Matter, Caltech</p>
-        <!-- For a clickable email address, replace the address and uncomment:
-        <p><a href="mailto:you@example.edu">you@example.edu</a></p>
-        -->
+        <p><a href="mailto:shreyavar08@gmail.com">shreyavar08@gmail.com</a><br>Institute for Quantum Information and Matter, Caltech</p>
       </section>
     </main>
     <footer>Shreya Vardhan</footer>
