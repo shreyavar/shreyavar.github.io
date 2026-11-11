@@ -26,7 +26,8 @@
     h1 { font-size: 38px; margin: 0 0 8px; }
     h2 { font-size: 25px; margin: 0 0 20px; }
     p { margin: 0 0 16px; }
-    .paper-meta, .paper-note { font: inherit; color: #365570; }
+    .paper-meta { font: inherit; color: #365570; }
+    .paper-note { font: inherit; color: var(--text); }
     .paper-meta a, .paper-note a { color: inherit; }
     .paper-note { margin: 4px 0 0; }
     header { border-bottom: 1px solid var(--line); padding-bottom: 25px; }
@@ -78,7 +79,7 @@
       <section id="publications" aria-labelledby="publications-title">
         <!-- Change this heading to "Selected publications" if preferred. -->
         <h2 id="publications-title">Publications</h2>
-        <p class="paper-meta">Author ordering is alphabetical unless otherwise noted. <sup>*</sup> indicates equal contribution.</p>
+        <p>Author ordering is alphabetical unless otherwise noted. <sup>*</sup> indicates equal contribution.</p>
         <ol class="publications">
           <li>
             <div class="paper-title">An efficient classical algorithm for OTOCs in chaotic quantum dynamics</div>
