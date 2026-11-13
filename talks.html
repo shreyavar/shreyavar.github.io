@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talks — Shreya Vardhan</title>
+  <meta name="description" content="Selected recorded talks by Shreya Vardhan.">
+  <style>
+    /* Change --accent to change the link color throughout the page. */
+    :root { --accent: #78434b; --text: #292929; --muted: #666; --line: #e5e1df; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 64px 28px 40px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    h1, h2 { font-weight: normal; line-height: 1.25; }
+    h1 { font-size: 38px; margin: 0 0 8px; }
+    h2 { font-size: 25px; margin: 0 0 20px; }
+    p { margin: 0 0 16px; }
+    .paper-meta { font: inherit; color: #365570; }
+    .paper-note { font: inherit; color: var(--text); }
+    .paper-meta a, .paper-note a { color: inherit; }
+    .paper-note { margin: 4px 0 0; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 25px; }
+    section { margin-top: 38px; scroll-margin-top: 24px; }
+    .portrait { float: right; width: 180px; max-width: 40%; height: auto; margin: 0 0 20px 30px; border-radius: 3px; }
+    #about::after { content: ""; display: block; clear: both; }
+    .publications { padding-left: 24px; }
+    .publications li { padding-left: 5px; margin-bottom: 24px; }
+    .paper-title { font-weight: bold; }
+    .paper-authors { margin: 3px 0; }
+    .skip-link { position: absolute; left: -9999px; }
+    .skip-link:focus { position: fixed; left: 16px; top: 16px; background: white; padding: 8px; }
+    @media (max-width: 540px) {
+      .container { padding: 32px 22px; }
+      h1 { font-size: 32px; }
+      .portrait { float: none; display: block; width: 150px; max-width: 100%; margin: 0 0 24px; }
+    }
+    </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container">
+    <header>
+      <h1>Shreya Vardhan</h1>
+    </header>
+    <main id="main">
+      <section aria-labelledby="talks-title">
+        <p><a href="index.html">Home</a></p>
+        <h2 id="talks-title">Talks</h2>
+        <!-- Recorded talks, most recent first. Duplicate a li block to add a talk. -->
+        <ul class="publications">
+          <li>
+            <div class="paper-title"><a href="https://sites.iiserpune.ac.in/~suneeta/Shreya%20Vardhan.mp4">Negative Energies and the Breakdown of Bulk Geometry</a></div>
+            <div>Advances in Black Hole Theory, IISER Pune · July 2026</div>
+          </li>
+          <li>
+            <div class="paper-title"><a href="https://www.youtube.com/watch?v=KaNDGOU8zOo">Free mutual information and higher-point OTOCs</a></div>
+            <div>QIP 2026 · January 30, 2026</div>
+            <p class="paper-note">Presented as “Free mutual information and ergodicity in operator space.”</p>
+          </li>
+          <li>
+            <div class="paper-title"><a href="https://www.youtube.com/watch?v=uo8OmGoz8VY">Estimating time in quantum chaotic systems and black holes</a></div>
+            <div>Black Hole Initiative colloquium, Harvard University · November 18, 2024</div>
+          </li>
+          <li>
+            <div class="paper-title"><a href="https://videos.cern.ch/record/3011276">Entanglement dynamics from universal low-lying modes</a></div>
+            <div>Strings 2024 · June 6, 2024</div>
+          </li>
+          <li>
+            <div class="paper-title"><a href="https://pirsa.org/23070011">Petz recovery from subsystems in conformal field theory</a></div>
+            <div>It from Qubit, Perimeter Institute · July 31, 2023</div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
